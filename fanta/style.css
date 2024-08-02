@@ -1,0 +1,315 @@
+body{
+   margin: 0px;
+   overflow-x: hidden;
+   overflow-y: auto;
+   cursor: default;
+   display: flex;
+   flex-direction: column;
+}
+.homeheader{
+   height: 70px;
+   width: 100vw;
+   display: flex;
+   justify-content: space-between;
+   background-color: rgb(0, 0, 0);
+
+}
+.espaco{
+   width: 10px;
+}
+.escritalogo{
+   display: flex;
+   justify-content: space-around;
+}
+.logopato{
+   width: 100;
+   height: 100px;
+   border-radius:50% ;
+   margin-top: -10px ;
+}
+.logo{
+   display: flex;
+   align-items: center;
+}
+.sectionbar{
+   align-items: center;
+   display: flex;
+   margin-right: 20px;
+   justify-content: center;
+}
+.link{
+   text-decoration: none;
+   color: #fff;
+   font-size: 15px;
+   padding: 5px 0px 5px 0px;
+   position: relative;
+   font-size: 16px;
+}
+.link::before {
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 2px;
+   background: #fff;
+   border-radius: 5px;
+   transform: scaleX(0);
+   transition: all 0.6s ease;
+ }
+ 
+ .link::before {
+   bottom: 0;
+   left: 0;
+ }
+ 
+ .link:hover::before {
+   transform: scaleX(1);
+ }
+.linkselecionado::before{
+   transform: scaleX(1);
+}
+.linkselecionado:hover::before {
+   transform: scaleX(0);
+ }
+ .list{
+   text-decoration: none;
+ }
+.clicksectionbar{
+   list-style: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+.btns_section{
+   margin: 0px 25px 0px 25px ;
+   color: white;
+   height: 30px;
+   display: 	flex;
+   align-items: center;
+}
+.botaopeca{
+   display: flex;
+   justify-content: center;
+   font-size: small;
+   width: 130px;
+
+}
+.sm_home{
+   text-align: center;
+   color: white;
+   border: 1.5px solid #b97a00;
+   background-color: #b97a00;
+   border-radius: 30px;
+   padding: 5px 15px 5px 15px;
+   font-size: small;
+   transition: all 200ms ease;
+   box-shadow: 0 0 25px rgb(255, 175, 25);
+
+}
+
+.hoverlaranja:hover{
+   background-color: #805500;
+   border: 1px solid #805500;
+   position: relative;
+   transform: scale(1.3, 1.2);
+   text-transform: uppercase;
+   box-shadow: 0 0 10px #ffaa00;
+
+
+ }
+.container{
+   display: flex;
+   width: 100%;
+   height: 100%;
+}
+.div_da_esquerda{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center ;
+   width: 40vw;
+   height: 85vh;
+   margin-left: 5%;
+
+}
+.div_da_direita{
+   background-image: url(./img_saibamais/bebida4.png);
+   position: fixed;
+   width: 55%;
+   height: 100%;
+   background-repeat: no-repeat;
+   background-size: 100%;
+   display: flex;
+   justify-content: flex-end;
+}
+.centralizador{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+.div_content{
+
+
+   width: 250px;
+   display: flex;
+
+   flex-direction: column;
+}
+.content{
+
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+
+   align-items: center;
+}
+.display{
+   display: flex;
+}
+.pecaaqui{
+   padding: 10px 40px 10px 40px ;
+   border-radius: 20px;
+   border: rgb(207, 207, 0);
+   background-color: rgb(192, 192, 0);
+   color: black;
+   transition: all 200ms ease;
+}
+.pecaaqui:hover{
+   background-color: red;
+   color: yellow;
+   transform: scale(1.1);
+}
+.folha{
+   height: 250px;
+   width: 170px;
+   position: absolute;
+   bottom: 30px;
+   left: -70px;
+   transform: rotate(30deg);
+}
+.lata{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   margin-right: 20px;
+
+}
+.l2{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: center;
+   margin-left: 20px;
+}
+.escritac{
+   margin-bottom: -10px;
+}
+
+
+
+
+
+
+
+.btn_voltar{
+   padding: 10px 20px 10px 20px;
+   border-radius: 7px;
+   background-color: transparent;
+   border: 1px solid red;
+   color: red;
+}
+.div_btn_voltar{
+   margin: 20px 20px 0px 0px;
+   width: 100%;
+   display: flex;
+   z-index: 1;
+
+   justify-content: flex-end;
+
+}
+.btn_voltar:hover{
+   background-color: red;
+   color: white;
+}
+.flexend{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   align-items: flex-end;
+}
+.vermelho{
+   color: red;
+}
+.branco{
+   color: white;
+}
+.quicksand{
+   font-family: "Quicksand", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 300;
+   font-style: italic;
+ }
+ .quicksandsemibold{
+   font-family: "Quicksand", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 700;
+   font-style: normal;
+ }
+ .quicksandbold{
+   font-family: "Quicksand", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 900;
+   font-style: normal;
+ }
+ .quicksandsemisemibold{
+   font-family: "Quicksand", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 700;
+   font-style: normal;
+ }
+ .quicksandboldforsec{
+   font-family: "Quicksand", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 700;
+   font-style: normal;
+ }
+ .quicksandsemibolditalic{
+   font-family: "Quicksand", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 500;
+   font-style: italic;
+ }
+
+.luckiest-guy-regular {
+   font-family: "Luckiest Guy", cursive;
+   font-weight: 400;
+   font-style: normal;
+ }
+ .poppins-bold {
+   font-family: "Poppins", sans-serif;
+   font-weight: 700;
+   font-style: normal;
+ }
+
+ .poppins-semibold {
+   font-family: "Poppins", sans-serif;
+   font-weight: 600;
+   font-style: normal;
+ }
+ .justificado{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+ }
+ .pointer{
+   cursor: pointer;
+ }
+
+ .verde{
+   color: rgb(0, 202, 0);
+}
+.active:active{
+   transform: translate(-2px, 2px);
+}
